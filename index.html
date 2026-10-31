@@ -1,52 +1,400 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FontFi — Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="FontFi Privacy Policy — how the Chrome extension processes, stores, and exports typography information.">
+  <title>Privacy Policy — FontFi</title>
+
   <style>
-    body {
-      max-width: 760px;
-      margin: 60px auto;
-      padding: 0 24px;
-      font: 16px/1.7 -apple-system, BlinkMacSystemFont, sans-serif;
-      color: #26332d;
+    :root {
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Arial, sans-serif;
+      color: #171717;
+      background: #fff;
+      font-synthesis: none;
     }
-    h1, h2 { color: #14251f; }
-    a { color: #26734d; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      line-height: 1.75;
+    }
+
+    main {
+      max-width: 820px;
+      margin: auto;
+      padding: 76px 28px 100px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 60px;
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      background: #ff563b;
+      color: #111;
+      border-radius: 13px;
+      width: 46px;
+      height: 46px;
+      font-weight: 900;
+      font-size: 29px;
+      letter-spacing: -.08em;
+    }
+
+    .brand-name {
+      font-weight: 800;
+      font-size: 24px;
+      letter-spacing: -.045em;
+    }
+
+    .eyebrow {
+      color: #f05238;
+      font-size: 12px;
+      letter-spacing: .13em;
+      font-weight: 750;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.08;
+      letter-spacing: -.055em;
+      margin: 0 0 16px;
+    }
+
+    h2 {
+      font-size: 23px;
+      letter-spacing: -.035em;
+      line-height: 1.25;
+      margin: 0 0 18px;
+    }
+
+    p { margin: 0 0 17px; }
+
+    ul {
+      padding-left: 24px;
+      margin: 0 0 18px;
+    }
+
+    li {
+      padding-left: 3px;
+      margin-bottom: 7px;
+    }
+
+    a {
+      color: #d63d25;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .date {
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 29px;
+    }
+
+    .intro {
+      font-size: 18px;
+      color: #434343;
+      line-height: 1.65;
+    }
+
+    .section {
+      border-top: 1px solid #eaeaea;
+      padding-top: 36px;
+      margin-top: 38px;
+    }
+
+    footer {
+      margin-top: 65px;
+      border-top: 1px solid #eaeaea;
+      padding-top: 25px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 38px 21px 65px; }
+      .brand { margin-bottom: 42px; }
+      .section {
+        margin-top: 30px;
+        padding-top: 29px;
+      }
+      h2 { font-size: 21px; }
+    }
+
+    @media print {
+      main { padding: 20px; }
+      a { color: #171717; }
+    }
   </style>
 </head>
+
 <body>
-  <h1>FontFi Privacy Policy</h1>
-  <p><strong>Last updated:</strong> October 20, 2026</p>
+<main>
 
-  <h2>Overview</h2>
-  <p>FontFi is a Chrome extension that helps users identify fonts,
-  inspect typography properties, and analyze font usage on webpages.</p>
+<header>
+  <div class="brand">
+    <div class="mark" aria-hidden="true">F</div>
+    <span class="brand-name">FontFi</span>
+  </div>
 
+  <div class="eyebrow">Transparency &amp; privacy</div>
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: October 30, 2026</p>
+
+  <p class="intro">
+    FontFi is a Chrome extension that identifies fonts,
+    inspects typography, analyzes page font usage,
+    compares saved references and exports review findings.
+  </p>
+</header>
+
+<section class="section">
   <h2>Data Collection and Use</h2>
-  <p>FontFi processes webpage elements and typography properties
-  to provide its core functionality.</p>
-  <p>Webpage analysis is performed locally in the user's browser.
-  FontFi does not transmit analyzed webpage content to the developer
-  or third parties.</p>
-  <p>FontFi does not sell user data or use it for advertising,
-  profiling, or creditworthiness assessment.</p>
 
+  <p>
+    After you activate FontFi, it processes page elements,
+    computed CSS, generated text, short ordinary-page text
+    samples, page titles and URLs, reachable shadow DOM and
+    same-origin frames. Canvas text measurements estimate
+    font availability. Analysis supports inspection,
+    highlighting, comparison and rechecking and is performed
+    locally. FontFi does not transmit analyzed page content
+    to the developer or third parties.
+  </p>
+
+  <p>
+    Signed-in and private-page text, URLs (including query
+    strings and fragments), element identifiers and your
+    notes can contain personal or confidential information.
+    Typography sampling excludes input/textarea values,
+    selected option text and detected editable-field contents;
+    password controls are excluded from scans. Inspection
+    of controls or detected editable fields uses a placeholder.
+    These protections do not recognize all sensitive
+    information rendered as ordinary page text.
+  </p>
+
+  <p>
+    FontFi does not sell user data or use it for advertising,
+    profiling, creditworthiness assessment or unrelated purposes.
+  </p>
+</section>
+
+<section class="section">
   <h2>Data Storage</h2>
-  <p>FontFi does not store analyzed webpage content on external
-  servers.</p>
 
+  <p>
+    FontFi does not store analyzed webpage content on external
+    servers. Projects use chrome.storage.local, scoped to a
+    site origin or individual local file. Stored information
+    includes references, font properties, short page-text
+    samples, labels, page/frame URLs, element routes and IDs,
+    capture/check times, viewport dimensions, comparisons,
+    statuses and user-written notes. Records also contain
+    local identifiers, revisions and save times. First-use
+    hint preferences are saved when inspection modes are used,
+    even without a saved finding.
+  </p>
+
+  <p>
+    FontFi does not use Chrome synchronized storage for projects.
+    View options (Hide icons and Font details) are stored locally
+    with each site's project and restored when that project opens.
+    Preview text, search, sort and export options remain in the
+    current panel rather than stored project preferences.
+    The preview feature does not add custom preview text to
+    saved findings or reports. Rendering uses fonts available
+    to the page and may cause the browser to load page-defined
+    webfonts through normal page font-loading mechanisms.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Retention and Deletion</h2>
+
+  <p>
+    Projects have no automatic expiry and survive panel closure,
+    reloads and clearing browsing history. Scan data and temporary
+    state are held in memory; page-associated caches can remain
+    until the page reloads or closes.
+  </p>
+
+  <p>
+    Delete references in Manage and findings in Review; edit or
+    clear notes in findings. Reset only deselects the active
+    reference. Reference deletion does not delete snapshots
+    already retained inside findings; delete those findings
+    separately. Finding deletion does not delete independent
+    references. Hint preferences and project metadata can remain
+    after visible items are deleted. This release has no dedicated
+    clear-all control. Removing the extension clears its local
+    extension storage.
+  </p>
+
+  <p>
+    When a legacy project without the current sample-safety
+    marker is loaded, older automatic samples and derived labels
+    are removed; user-written notes remain. This happens per
+    opened project, not as an immediate purge of all stored sites.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Clipboard and Exports</h2>
+
+  <p>
+    Copy actions write the selected CSS font stack, typography
+    CSS or color to the system clipboard. FontFi does not read
+    clipboard contents. Clipboard history, synchronization and
+    other applications may retain copies.
+  </p>
+
+  <p>
+    HTML, JSON and Markdown exports create files on your device,
+    without uploading them. You select scan overview, font/CSS
+    inventory, heuristic suggestions, saved findings and references.
+    Saved findings and references are exportable without a new scan;
+    unavailable or outdated scan data is identified.
+  </p>
+
+  <p>
+    Redact page data starts enabled each time a panel opens.
+    It removes or replaces page URLs/title, routes, element IDs,
+    text samples and custom labels. Include manual notes is a
+    separate choice, off by default: enabling it includes notes
+    even with page-data redaction enabled. Disabling redaction
+    includes page context. These choices affect preview/downloads,
+    not local projects or clipboard actions.
+  </p>
+
+  <p>
+    Redaction does not guarantee anonymity: selected sections
+    can retain typography, counts, timestamps, dimensions,
+    statuses and internal finding/reference identifiers.
+    CSS and included notes may contain identifying information.
+    Review the preview and exclusions before sharing. HTML
+    preview uses a local sandboxed frame with a text fallback
+    and does not upload the report. Downloaded files and
+    clipboard copies must be managed separately and are not
+    deleted when project items or the extension are removed.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Permissions</h2>
+
+  <ul>
+    <li>
+      <strong>activeTab:</strong>
+      temporary page access after you activate FontFi.
+    </li>
+    <li>
+      <strong>scripting:</strong>
+      inject the bundled inspection code and interface.
+    </li>
+    <li>
+      <strong>storage:</strong>
+      save projects and first-use hint preferences locally.
+    </li>
+  </ul>
+
+  <p>
+    FontFi does not request browsing-history, cookies,
+    clipboard-read or persistent all-sites host permissions.
+    File inspection requires Chrome's file-URL access setting.
+    Web-accessible packaged logos are not an all-sites
+    inspection permission.
+  </p>
+</section>
+
+<section class="section">
   <h2>Third-Party Services</h2>
-  <p>FontFi does not use third-party analytics or advertising services.</p>
 
+  <p>
+    FontFi does not use third-party analytics, telemetry,
+    tracking, advertising or a remote project/account service.
+    The reviewed extension contains no application network
+    requests uploading analysis or notes. Visiting the policy
+    on GitHub Pages is separate and subject to GitHub's
+    privacy practices.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Optional Support through Boosty</h2>
+
+  <p>
+    Choosing Support FontFi opens
+    <a href="https://boosty.to/fontfi.studio/donate"
+       target="_blank"
+       rel="noopener noreferrer">
+      https://boosty.to/fontfi.studio/donate
+    </a>
+    in a new tab. Supporting FontFi is voluntary and is
+    not required to use the extension's features.
+  </p>
+
+  <p>
+    Boosty is an external service. Donations and any
+    account/payment interactions take place there under
+    Boosty's own terms and privacy practices. The FontFi
+    extension does not collect or process payment details,
+    integrate a payment system, verify donations or send
+    scanned page content, projects or notes to Boosty.
+    The link uses no-referrer protection. When you visit
+    Boosty, its website processes information associated
+    with your visit under its own policies, separately
+    from FontFi's local analysis.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Your Choices</h2>
+
+  <p>
+    You choose pages to inspect, saved references/findings,
+    notes, clipboard actions and exports. Use the deletion
+    controls above or remove the extension to clear local
+    extension storage. For privacy questions or requests
+    concerning applicable rights, use the contact below.
+    The developer cannot retrieve local projects through
+    the extension.
+  </p>
+</section>
+
+<section class="section">
   <h2>Changes to This Policy</h2>
-  <p>This policy may be updated if the extension's functionality
-  or data practices change.</p>
 
+  <p>
+    This policy may be updated if the extension's
+    functionality or data practices change.
+  </p>
+</section>
+
+<section class="section">
   <h2>Contact</h2>
-  <p>For privacy-related questions, please use the contact information
-  provided on the FontFi Chrome Web Store listing.</p>
+
+  <p>
+    For privacy-related questions, please use the contact
+    information provided on the FontFi Chrome Web Store listing.
+  </p>
+</section>
+
+<footer>
+  © FontFi · Privacy Policy
+</footer>
+
+</main>
 </body>
 </html>
